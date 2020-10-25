@@ -4,9 +4,9 @@
 <tr>
 	<td colspan=2 align=center>
 		<center>
-		<img height=200px align=center src="https://raw.githubusercontent.com/cecada/Tenda-AC6-Root-Acces/main/images/20200927_174832.jpg"> 
-		<img height=200px align=center src="https://raw.githubusercontent.com/cecada/Tenda-AC6-Root-Acces/main/images/20200927_175341.jpg"> 
-		<img height=200px align=center src="https://raw.githubusercontent.com/cecada/Tenda-AC6-Root-Acces/main/images/20201024_163850.jpg">
+		<img height=150px align=center src="https://raw.githubusercontent.com/cecada/Tenda-AC6-Root-Acces/main/images/20200927_174832.jpg"> 
+		<img height=150px align=center src="https://raw.githubusercontent.com/cecada/Tenda-AC6-Root-Acces/main/images/20200927_175341.jpg"> 
+		<img height=150px align=center src="https://raw.githubusercontent.com/cecada/Tenda-AC6-Root-Acces/main/images/20201024_163850.jpg">
 <tr>
 	<td colspan=1> <b>Router: 
 	<td colspan=1>Tenda AC1200 (Model AC6) Smart Dual Band WiFi Router
