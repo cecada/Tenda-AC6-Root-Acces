@@ -56,7 +56,8 @@ Found issues:
 * It is possible to form an HTTP post will result in a denial of service by causing the router to crash and enter a boot loop.
 
 <h2>Logging in / Getting Admin Password</h2>
-	Router admin is done via a web portal which is defaulted to 192.168.0.1. The only credentials which is asked for is the password. The username appears to be static admin. Prior to the HTTP POST request the client hashes the password using MD5. A sample curl would look like:
+
+Router admin is done via a web portal which is defaulted to 192.168.0.1. The only credentials which is asked for is the password. The username appears to be static admin. Prior to the HTTP POST request the client hashes the password using MD5. A sample curl would look like:
 
 ```
 curl -isk -X 'POST' -H 'Host: 192.168.0.1' -H 'User-Agent: Mozilla/5.0' -H 'Accept: */*' 
@@ -70,6 +71,8 @@ curl -isk -X 'POST' -H 'Host: 192.168.0.1' -H 'User-Agent: Mozilla/5.0' -H 'Acce
 This results in 301 redirect to main.html, and of critical importance, a cookie is set with the hash + a pseudo-random 6 byte string. For example: 2a3ffeeda250174eaeba880553e0dfd4<b>piacvb</b> With this "token" we can do a lot of harm. 
 
 Given the simplicity of authentication, the acceptance, and auto-population of default password, creating a brute-force script to find the password, and thus the MD5 hash is trivial.
+
+Why is this a problem? I mean, if you have admin creds shouldn't you be able to turn on telnet? Perhaps. However, on this model the admin user interface does not have an interface for this. I have read some other model do. This seems to be an API access that wasn't intended for this model.
 
 <h2>Turning on Telnet</h2>
 With this router, telnet is not on by default. I discovered a method, once you are connected and brute-forced the admin password you can turn it on without having to physically access the hardware. 
