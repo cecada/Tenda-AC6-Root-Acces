@@ -95,7 +95,7 @@ Because I am lazy, I created a "one-liner" which will:
 Telnet will ask for the username/password which is root/Fireitup
 Device R00ted with no access to the hardware needed
 
-<h2>Denial of Service: Crash it</h2>
+<h2>Denial of Service: Crash it (CVE-2020-28095)</h2>
 Once you have brute forced the admin password it is possible to send an HTTP POST request which will trigger a crash, and result in a boot-loop.
 
 ```
