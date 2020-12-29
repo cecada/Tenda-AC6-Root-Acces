@@ -50,8 +50,8 @@ Found issues:
 * HTTP admin access has a static username (admin)
 * Admin password is only secured with a simple MD5 hash
 * Default speed test settings located on mtdbblock5 point to urls which download malware:
-  * speedtest.addr.list7=sh.vnet.cn/downloads/elive1.16.exe?0.4812286039814353 ([Hybrid Report](https://www.hybrid-analysis.com/sample/4c15a77c71218d7feef52d9c5504c0d32d8e580819186a4bb708d3c120e7b15e))
-  * speedtest.addr.list6=viewer.d.cnki.net/CNKI%20E-Learning%202.4.1-20140714.exe ([Hybrid Report](https://www.hybrid-analysis.com/sample/bfa165373e5f5ed6ba4e73440bc9bb94d6089d8edb784db5a4a011d8ee87f790/5f8440c84e139b56f00f0728))
+  * (CVE-2020-28094) speedtest.addr.list7=sh.vnet.cn/downloads/elive1.16.exe?0.4812286039814353 ([Hybrid Report](https://www.hybrid-analysis.com/sample/4c15a77c71218d7feef52d9c5504c0d32d8e580819186a4bb708d3c120e7b15e))
+  * (CVE-2020-28094) speedtest.addr.list6=viewer.d.cnki.net/CNKI%20E-Learning%202.4.1-20140714.exe ([Hybrid Report](https://www.hybrid-analysis.com/sample/bfa165373e5f5ed6ba4e73440bc9bb94d6089d8edb784db5a4a011d8ee87f790/5f8440c84e139b56f00f0728))
 * (CVE-2020-28093) Default system accounts (admin, support, user, and nobody) are hidden from the HTTP admin console, have shell access, and all have 1234 as the password.
 * It is possible to form an HTTP post will result in a denial of service by causing the router to crash and enter a boot loop.
 
