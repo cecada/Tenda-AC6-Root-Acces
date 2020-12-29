@@ -52,7 +52,7 @@ Found issues:
 * Default speed test settings located on mtdbblock5 point to urls which download malware:
   * speedtest.addr.list7=sh.vnet.cn/downloads/elive1.16.exe?0.4812286039814353 ([Hybrid Report](https://www.hybrid-analysis.com/sample/4c15a77c71218d7feef52d9c5504c0d32d8e580819186a4bb708d3c120e7b15e))
   * speedtest.addr.list6=viewer.d.cnki.net/CNKI%20E-Learning%202.4.1-20140714.exe ([Hybrid Report](https://www.hybrid-analysis.com/sample/bfa165373e5f5ed6ba4e73440bc9bb94d6089d8edb784db5a4a011d8ee87f790/5f8440c84e139b56f00f0728))
-* Default system accounts (admin, support, user, and nobody) are hidden from the HTTP admin console, have shell access, and all have 1234 as the password.
+* (CVE-2020-28093) Default system accounts (admin, support, user, and nobody) are hidden from the HTTP admin console, have shell access, and all have 1234 as the password.
 * It is possible to form an HTTP post will result in a denial of service by causing the router to crash and enter a boot loop.
 
 <h2>Logging in / Getting Admin Password</h2>
@@ -74,7 +74,7 @@ Given the simplicity of authentication, the acceptance, and auto-population of d
 
 Why is this a problem? I mean, if you have admin creds shouldn't you be able to turn on telnet? Perhaps. However, on this model the admin user interface does not have an interface for this. I have read some other model do. This seems to be an API access that wasn't intended for this model.
 
-<h2>Turning on Telnet</h2>
+<h2>Turning on Telnet (CVE: CVE-2020-28093)</h2>
 With this router, telnet is not on by default. I discovered a method, once you are connected and brute-forced the admin password you can turn it on without having to physically access the hardware. 
 
 ```
